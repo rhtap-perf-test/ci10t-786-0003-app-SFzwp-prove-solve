@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xyla
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0003-tenant/ci10t-786-0003-app/devfile-sample-xyla@sha256:163a30d50c06e28821b61cc613c26006a2b2104cc0091f480a23d5e4a6056dbb
+        name: my-nodejs
+        resources: {}
+status: {}
